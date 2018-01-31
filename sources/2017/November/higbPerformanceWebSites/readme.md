@@ -12,7 +12,7 @@
 
 - 难以用手工的方式定义区域坐标
 - 只能定义矩形
-- 通过DHTML创建的图片地图不能再Internet Explorer中工作。
+- 通过DHTML创建的图片地图不能在Internet Explorer中工作。
 
 <font size=5><b>CSS Sprites</b></font>
 
@@ -116,12 +116,9 @@ HTTP1.1中Cache-Control使用max-age指令指定组件被缓存多久，它以�
 
 没有defer或async，浏览器会立即加载并执行指定的脚本，“立即”指的是在渲染该script标签之下的文档元素之前，也就是说不等待后续载入的文档元素，读到就加载并执行。
 
-<b>async</b> : 脚本延迟到文档解析和显示后执行，有顺序   <script async src="script.js"></script>
-有 async，加载和渲染后续文档元素的过程将和 script.js 的加载与执行并行进行（异步）。
-
-<b>defer</b>:不保证顺序 <script defer src="script.js"></script>
-有defer，加载后续文档元素的过程将和 script.js 的加载并行进行（异步），但 script.js 的执行要在所有元素解析完成之后，DOMContentLoaded 事件触发之前完成。
-
+ - defer是在HTML解析完成之后才会执行，DOMContentLoaded事件触发执行之前。如果是多个，按照加载的顺序依次执行
+ - async是在加载完成后立即执行，如果是多个，执行顺序和加载顺序无关
+ 
 ****
 
 ## 规则6——将脚本放在底部
