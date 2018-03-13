@@ -8,6 +8,8 @@
 
 # 2018
 
+- March 13,2018 >> [JavaScript中不同类型的区分](https://github.com/wksmile/blog/issues/5)
+
 - January 31,2018 >> [css盒模型完整介绍](https://github.com/wksmile/blog/issues/4)
 
 ***
